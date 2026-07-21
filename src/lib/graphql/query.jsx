@@ -1,8 +1,7 @@
 import { gql } from  "@apollo/client";
 
 // export const MESSAGE ="Anthelme"
-export const GETAUTH=gql`
-query GetAuth {
+export const GETAUTH=gql`query GetAuth {
   getAuth {
     token
     user {
@@ -14,9 +13,7 @@ query GetAuth {
       username
     }
   }
-}
-
-// `;
+}`;
 
 // export const TEAMS=gql`
 // query GetAllTeams {
