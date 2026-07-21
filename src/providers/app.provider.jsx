@@ -1,19 +1,10 @@
 import React from "react";
 import { ApolloProvider } from "@apollo/client";
 
-// import { client } from "../lib/apollo.connection";
-// import UserContext from "../context/AuthContext";
-
+console.log("ApolloProvider =", ApolloProvider);
 
 const AppProvider = ({ children }) => {
-  return (
-    <ApolloProvider > 
-      {/* //client={client} */}
-      {/* <UserContext> */}
-       {children}
-      {/* </UserContext> */}
-    </ApolloProvider>
-  );
+  return children;
 };
 
 export default AppProvider;
