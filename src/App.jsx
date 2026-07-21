@@ -43,7 +43,7 @@ import { SwitchProvider } from './context/SwitchContext'
 export default function App() {
   return (
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec switch mais sans js cookies
+      SANS PROVIDERS OK avec switch mais sans js cookies sans les requeste
     </div>
   )
 }
