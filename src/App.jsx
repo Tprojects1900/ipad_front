@@ -1,5 +1,5 @@
 import React from 'react'
-// import { SwitchProvider } from './context/SwitchContext'
+import { SwitchProvider } from './context/SwitchContext'
 // // import AppRoutes from './routes'
 // import { ScreenProvider } from './context/ScreenContext'
 // import { SidebarProvider } from './context/SidebarContext'
@@ -43,7 +43,7 @@ import React from 'react'
 export default function App() {
   return (
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK
+      SANS PROVIDERS OK avec switch
     </div>
   )
 }
