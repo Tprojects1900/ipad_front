@@ -1,7 +1,14 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <h1>Hello React 16 iOS 9</h1>,
-    document.getElementById("root")
+  <BrowserRouter basename="/ipad">
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );

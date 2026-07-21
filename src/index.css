@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Reset global et balises classiques */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    /* Fond en noir partiel (Zinc très sombre) */
+    --background: #09090b;
+    --foreground: #ffffff;
+  }
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Animations et utilitaires personnalisés */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Masquer la scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* .scrollbar-hide {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+} */
+
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+}
+
+.stadium-bg {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #050a05;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(249, 115, 22, 0.45) 0%, transparent 55%),
+    radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.45) 0%, transparent 55%),
+    linear-gradient(90deg, rgba(249, 115, 22, 0.08) 0%, rgba(0,0,0,0.8) 50%, rgba(16, 185, 129, 0.08) 100%);
+  background-blend-mode: screen;
+  image-rendering: -webkit-optimize-contrast; /* Corrigé : pas de guillemets et point-virgule ajouté */
+}
+
+.nom-equipe {
+  line-height: 1.5 !important;
+  overflow: visible !important;
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.html-image {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
+
+.export-pdf {
+  font-family: "Poppins", sans-serif !important;
+}
