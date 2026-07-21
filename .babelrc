@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ios": "9",
+          "safari": "9"
+        },
+        "useBuiltIns": false
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
