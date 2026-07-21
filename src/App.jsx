@@ -3,7 +3,7 @@ import { SwitchProvider } from './context/SwitchContext'
 // // import AppRoutes from './routes'
 // import { ScreenProvider } from './context/ScreenContext'
 // import { SidebarProvider } from './context/SidebarContext'
-// import AppProvider from './providers/app.provider'
+import AppProvider from './providers/app.provider'
 
 // // 1. IMPORTATION DES STYLES OBLIGATOIRE
 // import { ToastContainer } from 'react-toastify'
@@ -44,7 +44,7 @@ export default function App() {
   return (
     // <AppProvider>
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec useToggle(apollo client 22)
+      SANS PROVIDERS OK avec useToggle(apollo client 23)
     </div>
     // </AppProvider>
   )
