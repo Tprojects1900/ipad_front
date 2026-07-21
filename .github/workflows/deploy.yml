@@ -3,7 +3,7 @@ name: Deploy ipad_front to Contabo
 on:
   push:
     branches:
-      - deploy-ipad
+      - contabo-main
 
 jobs:
   deploy:
