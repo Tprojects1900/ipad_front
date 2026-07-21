@@ -43,7 +43,7 @@ import { SwitchProvider } from './context/SwitchContext'
 export default function App() {
   return (
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec useToggle(apollo)
+      SANS PROVIDERS OK avec useToggle(apollo client)
     </div>
   )
 }
