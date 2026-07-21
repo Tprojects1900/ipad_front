@@ -1,6 +1,6 @@
 import React from 'react'
 import { SwitchProvider } from './context/SwitchContext'
-import AppRoutes from './routes'
+// import AppRoutes from './routes'
 import { ScreenProvider } from './context/ScreenContext'
 import { SidebarProvider } from './context/SidebarContext'
 import AppProvider from './providers/app.provider'
@@ -15,7 +15,10 @@ export default function App() {
       <SidebarProvider>
         <ScreenProvider>
           <SwitchProvider>
-            <AppRoutes />
+            {/* <AppRoutes /> */}
+            <div style={{fontSize:"40px", color:"green"}}>
+              APP ROUTES TEST OK
+            </div>
           </SwitchProvider>
         </ScreenProvider>
       </SidebarProvider>
