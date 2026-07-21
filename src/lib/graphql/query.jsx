@@ -1,20 +1,20 @@
 import { gql } from  "@apollo/client";
 
-export const MESSAGE ="Anthelme"
-// export const GETAUTH=gql`
-// query GetAuth {
-//   getAuth {
-//     token
-//     user {
-//       email
-//       createdAt
-//       fullname
-//       id
-//       updatedAt
-//       username
-//     }
-//   }
-// }
+// export const MESSAGE ="Anthelme"
+export const GETAUTH=gql`
+query GetAuth {
+  getAuth {
+    token
+    user {
+      email
+      createdAt
+      fullname
+      id
+      updatedAt
+      username
+    }
+  }
+}
 
 // `;
 

@@ -1,7 +1,7 @@
 
 
 import { useLazyQuery, useQuery, useSubscription, useMutation } from "@apollo/client";
-import {MESSAGE} from "./graphql/query";
+import {GETAUTH} from "./graphql/query";
 
 export const useGetToggleSettings=()=>{
   return {
