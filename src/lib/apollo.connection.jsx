@@ -4,7 +4,7 @@ import { getMainDefinition } from '@apollo/client/utilities';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions'; 
 import { createClient } from 'graphql-ws'; 
  import {createUploadLink} from 'apollo-upload-client';
-// 🚀 REFACTION ICI : Import standard compatible avec Webpack
+//  REFACTION ICI : Import standard compatible avec Webpack
 // import createUploadLink from 'apollo-upload-client/public/createUploadLink.js';
 import Cookies from 'js-cookie';
 
@@ -54,7 +54,7 @@ const wsLink = new GraphQLWsLink(
   })
 );
 
-// 🚀 REFACTION ICI : On remplace toute la fonction fetch maison par createUploadLink.
+//  REFACTION ICI : On remplace toute la fonction fetch maison par createUploadLink.
 // Ce lien intercepte les fichiers *avant* qu'Apollo ne les transforme en chaîne JSON (et donc en {}).
 const uploadLink = createUploadLink({
   uri: api_url,
