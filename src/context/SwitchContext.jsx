@@ -2,8 +2,9 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 
 // Importations de tes hooks personnalisés
-import { useGetToggle } from "../hooks/useCalls"; 
-import { useToggleSettings } from "../lib/graphql.service"; // Si nécessaire pour la mutation, ou utilise ton hook adapté
+// import { useGetToggle } from "../hooks/useCalls"; 
+// import { useToggleSettings } from "../lib/graphql.service";
+ // Si nécessaire pour la mutation, ou utilise ton hook adapté
 
 const SwitchContext = createContext();
 
