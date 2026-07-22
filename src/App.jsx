@@ -44,7 +44,7 @@ export default function App() {
   return (
     // <AppProvider>
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec useToggle(apollo client 23)
+      SANS PROVIDERS OK avec useToggle(apollo client 25)
     </div>
     // </AppProvider>
   )

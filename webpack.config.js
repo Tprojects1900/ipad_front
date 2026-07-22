@@ -17,7 +17,7 @@ module.exports = {
     publicPath: "/ipad/",
   },
 
-  // 🔴 Configuration DevServer pour Webpack 4 (v3)
+  // Configuration DevServer pour Webpack 4 (v3)
   devServer: {
     contentBase: path.join(__dirname, "public"), // Remplace "static"
     publicPath: "/ipad/",
@@ -35,11 +35,24 @@ module.exports = {
         include: /node_modules/,
         type: "javascript/auto",
       },
+      // {
+      //   test: /\.jsx?$/,
+      //   exclude: /node_modules/,
+      //   use: "babel-loader",
+      // },
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: "babel-loader",
-      },
+  test: /\.jsx?$/,
+  include: [
+    path.resolve(__dirname, "src"),
+    path.resolve(__dirname, "node_modules/@apollo/client"),
+    path.resolve(__dirname, "node_modules/graphql"),
+    path.resolve(__dirname, "node_modules/ts-invariant"),
+    path.resolve(__dirname, "node_modules/zen-observable-ts"),
+  ],
+  use: {
+    loader: "babel-loader",
+  },
+},
       {
         test: /\.css$/,
         use: [
