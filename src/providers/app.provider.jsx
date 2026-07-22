@@ -1,8 +1,8 @@
 import React from "react";
 // import { ApolloProvider } from "@apollo/client";
-import { ApolloClient } from "@apollo/client";
+import { gql } from "@apollo/client";
 
-console.log("ApolloProvider =", ApolloClient);
+console.log("ApolloProvider =", gql);
 
 const AppProvider = ({ children }) => {
   return children;
