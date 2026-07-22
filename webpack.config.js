@@ -41,18 +41,11 @@ module.exports = {
       //   use: "babel-loader",
       // },
       {
-  test: /\.jsx?$/,
-  include: [
-    path.resolve(__dirname, "src"),
-    path.resolve(__dirname, "node_modules/@apollo/client"),
-    path.resolve(__dirname, "node_modules/graphql"),
-    path.resolve(__dirname, "node_modules/ts-invariant"),
-    path.resolve(__dirname, "node_modules/zen-observable-ts"),
-  ],
-  use: {
-    loader: "babel-loader",
-  },
-},
+        test: /\.m?jsx?$/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
       {
         test: /\.css$/,
         use: [
