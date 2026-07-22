@@ -1,11 +1,18 @@
 import React from "react";
-// import { ApolloProvider } from "@apollo/client";
-import { gql,ApolloClient} from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
 
-console.log("ApolloProvider =", gql);
+import { client } from "../lib/apollo.connection";
+import UserContext from "../context/AuthContext";
+
 
 const AppProvider = ({ children }) => {
-  return children;
+  return (
+    <ApolloProvider client={client}>
+      <UserContext>
+       {children}
+      </UserContext>
+    </ApolloProvider>
+  );
 };
 
 export default AppProvider;
