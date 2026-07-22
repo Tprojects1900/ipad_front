@@ -46,7 +46,7 @@ export default function App() {
   return (
     // <AppProvider>
     <div style={{fontSize:"40px", color:"green"}}>
-      IPAD IS OKAY VERSION 35
+      IPAD IS OKAY VERSION 36
     </div>
     // </AppProvider>
   )
