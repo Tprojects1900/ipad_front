@@ -10,14 +10,15 @@
 
 //2
 
-import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
 
-
-
+const link = new HttpLink({
+    uri: "https://talent-hubapp.com/graphql"
+});
 
 export const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  link: undefined
+    cache: new InMemoryCache(),
+    link
 });
 
 
