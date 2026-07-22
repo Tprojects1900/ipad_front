@@ -66,15 +66,13 @@ jobs:
             npm ci
 
 
+            echo "🧹 Suppression de l'ancien build"
+
+            rm -rf "$APP_DIR/dist"
+
             echo "🏗️ Build React"
 
             npm run build
-
-
-            echo "🧹 Nettoyage ancien build"
-
-            rm -rf /var/www/talent-hubapp/ipad_front/dist_old
-
 
             echo "📂 Build disponible dans dist"
 
