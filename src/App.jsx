@@ -6,8 +6,8 @@ import { SwitchProvider } from './context/SwitchContext'
 // mport AppProvider from './providers/app.provider'
 
 // // 1. IMPORTATION DES STYLES OBLIGATOIRE
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css' 
+// import { ToastContainer } from 'react-toastify'
+// import 'react-toastify/dist/ReactToastify.css' 
 
 // export default function App() {
 //   return (
@@ -44,7 +44,7 @@ export default function App() {
   return (
     // <AppProvider>
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec useToggle(apollo client 30)
+      SANS PROVIDERS OK avec useToggle(apollo client 31)
     </div>
     // </AppProvider>
   )
