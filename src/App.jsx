@@ -1,6 +1,7 @@
 import React from 'react'
-import { SwitchProvider } from './context/SwitchContext'
- import AppProvider from './providers/app.provider'
+import AppProvider from './providers/app.provider'
+// import { SwitchProvider } from './context/SwitchContext'
+
 // import AppRoutes from './routes'
 // import { ScreenProvider } from './context/ScreenContext'
 // import { SidebarProvider } from './context/SidebarContext'
@@ -45,7 +46,7 @@ export default function App() {
   return (
     // <AppProvider>
     <div style={{fontSize:"40px", color:"green"}}>
-      SANS PROVIDERS OK avec useToggle(apollo client 34)
+      IPAD IS OKAY VERSION 35
     </div>
     // </AppProvider>
   )
